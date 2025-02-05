@@ -7,12 +7,12 @@ const Carousel = ({ autoSlide = true, slideInterval = 3000 }) => {
   const [slides, setSlides] = useState([
     {
       id: 1,
-      image: 'https://www.cdc.gov/heart-disease/media/images/2024/10/Heart-Disease-Facts.jpg',
+      image: 'https://www.careinsurance.com/upload_master/media/posts/November2022/know-the-heart-diseases-types-reasons-and-treatment.jpg',
       alt_text: 'Slide 1',
     },
     {
       id: 2,
-      image: 'https://miro.medium.com/v2/resize:fit:1400/1*WoEu5XEHEwYFcDkbl1A3Bw.jpeg',
+      image: 'https://d3b6u46udi9ohd.cloudfront.net/wp-content/uploads/2018/08/12102342/Heart-disease-signs-and-Symptoms-Feature.jpg',
       alt_text: 'Slide 2',
     },
     {

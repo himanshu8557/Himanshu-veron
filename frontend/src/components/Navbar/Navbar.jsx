@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Import the custom CSS file
+import mylogo from '../../assets/final_logo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,17 +10,17 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="absolute w-full top-0 left-0 z-10 bg-transparent">
       <nav className="flex justify-between items-center w-[92%] mx-auto py-4">
         <div>
           <img
-            className="w-24 cursor-pointer logo"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbO3gXVi3vbV_ZmK8vxZgxYkXz1py13neTlQ&s"
+            className="w-48 h-32 cursor-pointer logo"
+            src={mylogo}
             alt="Logo"
           />
         </div>
         <div
-          className={`nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-${isMenuOpen ? '0' : '-100%' } md:w-auto w-full flex items-center px-5`}
+          className={`nav-links duration-500 md:static absolute bg-transparent md:min-h-fit min-h-[60vh] left-0 top-${isMenuOpen ? '0' : '-100%'} md:w-auto w-full flex items-center px-5`}
         >
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             <li>
